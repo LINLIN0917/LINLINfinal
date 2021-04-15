@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		217DBDF42626AFF6000218FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF32626AFF6000218FD /* ContentView.swift */; };
 		217DBDF62626AFF7000218FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF52626AFF7000218FD /* Assets.xcassets */; };
 		217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF82626AFF7000218FD /* Preview Assets.xcassets */; };
+		217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217DBE092626B0DD000218FD /* GoogleService-Info.plist */; };
+		217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBE0C2626B123000218FD /* AppDelegate.swift */; };
+		61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,11 @@
 		217DBDF52626AFF7000218FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		217DBDF82626AFF7000218FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		217DBDFA2626AFF7000218FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217DBE092626B0DD000218FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		217DBE0C2626B123000218FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LINLINfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07C77D4D3865E3C1C464E07 /* Pods-LINLINfinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.debug.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.debug.xcconfig"; sourceTree = "<group>"; };
+		F75B72BD546FBC7CC49D6774 /* Pods-LINLINfinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.release.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,8 @@
 			children = (
 				217DBDF02626AFF6000218FD /* LINLINfinal */,
 				217DBDEF2626AFF6000218FD /* Products */,
+				6CCA630CB5D656D897FD001F /* Pods */,
+				E3550F0856778473D2561EA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */,
+				217DBE0C2626B123000218FD /* AppDelegate.swift */,
+				217DBE092626B0DD000218FD /* GoogleService-Info.plist */,
 				217DBDF32626AFF6000218FD /* ContentView.swift */,
 				217DBDF52626AFF7000218FD /* Assets.xcassets */,
 				217DBDFA2626AFF7000218FD /* Info.plist */,
@@ -69,6 +82,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CCA630CB5D656D897FD001F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D07C77D4D3865E3C1C464E07 /* Pods-LINLINfinal.debug.xcconfig */,
+				F75B72BD546FBC7CC49D6774 /* Pods-LINLINfinal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3550F0856778473D2561EA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 217DBDFD2626AFF7000218FD /* Build configuration list for PBXNativeTarget "LINLINfinal" */;
 			buildPhases = (
+				8207F6CD7B7538885AA57D8A /* [CP] Check Pods Manifest.lock */,
 				217DBDEA2626AFF6000218FD /* Sources */,
 				217DBDEB2626AFF6000218FD /* Frameworks */,
 				217DBDEC2626AFF6000218FD /* Resources */,
+				400B52FC001EE3B4B87879C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +159,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */,
+				217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */,
 				217DBDF62626AFF7000218FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		400B52FC001EE3B4B87879C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8207F6CD7B7538885AA57D8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LINLINfinal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		217DBDEA2626AFF6000218FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */,
 				217DBDF42626AFF6000218FD /* ContentView.swift in Sources */,
 				217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */,
 			);
@@ -264,6 +340,7 @@
 		};
 		217DBDFE2626AFF7000218FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07C77D4D3865E3C1C464E07 /* Pods-LINLINfinal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +362,7 @@
 		};
 		217DBDFF2626AFF7000218FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75B72BD546FBC7CC49D6774 /* Pods-LINLINfinal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
