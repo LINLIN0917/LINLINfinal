@@ -3,20 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2108FB1F2642482D008DE1E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2108FB1E2642482D008DE1E9 /* Kingfisher */; };
+		210DAF792648174F00631AAF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210DAF782648174F00631AAF /* StartView.swift */; };
 		217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */; };
 		217DBDF42626AFF6000218FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF32626AFF6000218FD /* ContentView.swift */; };
 		217DBDF62626AFF7000218FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF52626AFF7000218FD /* Assets.xcassets */; };
 		217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF82626AFF7000218FD /* Preview Assets.xcassets */; };
 		217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217DBE092626B0DD000218FD /* GoogleService-Info.plist */; };
 		217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBE0C2626B123000218FD /* AppDelegate.swift */; };
+		21AA7E7326468DC9004B4429 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA7E7226468DC9004B4429 /* SignUpView.swift */; };
+		21AA7E7526468F68004B4429 /* BuildAccountFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA7E7426468F68004B4429 /* BuildAccountFile.swift */; };
+		21B503142646D57900CF68BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B503132646D57900CF68BD /* SignInView.swift */; };
+		21B503162646F37200CF68BD /* SetPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B503152646F37200CF68BD /* SetPhotoView.swift */; };
 		61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210DAF782648174F00631AAF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		217DBDEE2626AFF6000218FD /* LINLINfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LINLINfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LINLINfinalApp.swift; sourceTree = "<group>"; };
 		217DBDF32626AFF6000218FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +32,10 @@
 		217DBDFA2626AFF7000218FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217DBE092626B0DD000218FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		217DBE0C2626B123000218FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21AA7E7226468DC9004B4429 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		21AA7E7426468F68004B4429 /* BuildAccountFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildAccountFile.swift; sourceTree = "<group>"; };
+		21B503132646D57900CF68BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		21B503152646F37200CF68BD /* SetPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPhotoView.swift; sourceTree = "<group>"; };
 		6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LINLINfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C77D4D3865E3C1C464E07 /* Pods-LINLINfinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.debug.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.debug.xcconfig"; sourceTree = "<group>"; };
 		F75B72BD546FBC7CC49D6774 /* Pods-LINLINfinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.release.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2108FB1F2642482D008DE1E9 /* Kingfisher in Frameworks */,
 				61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +79,11 @@
 				217DBE0C2626B123000218FD /* AppDelegate.swift */,
 				217DBE092626B0DD000218FD /* GoogleService-Info.plist */,
 				217DBDF32626AFF6000218FD /* ContentView.swift */,
+				210DAF782648174F00631AAF /* StartView.swift */,
+				21B503132646D57900CF68BD /* SignInView.swift */,
+				21AA7E7226468DC9004B4429 /* SignUpView.swift */,
+				21B503152646F37200CF68BD /* SetPhotoView.swift */,
+				21AA7E7426468F68004B4429 /* BuildAccountFile.swift */,
 				217DBDF52626AFF7000218FD /* Assets.xcassets */,
 				217DBDFA2626AFF7000218FD /* Info.plist */,
 				217DBDF72626AFF7000218FD /* Preview Content */,
@@ -117,6 +134,9 @@
 			dependencies = (
 			);
 			name = LINLINfinal;
+			packageProductDependencies = (
+				2108FB1E2642482D008DE1E9 /* Kingfisher */,
+			);
 			productName = LINLINfinal;
 			productReference = 217DBDEE2626AFF6000218FD /* LINLINfinal.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 217DBDE52626AFF6000218FD;
+			packageReferences = (
+				2108FB1D2642482D008DE1E9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 217DBDEF2626AFF6000218FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -213,9 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B503142646D57900CF68BD /* SignInView.swift in Sources */,
+				21AA7E7326468DC9004B4429 /* SignUpView.swift in Sources */,
+				21B503162646F37200CF68BD /* SetPhotoView.swift in Sources */,
+				210DAF792648174F00631AAF /* StartView.swift in Sources */,
 				217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */,
 				217DBDF42626AFF6000218FD /* ContentView.swift in Sources */,
 				217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */,
+				21AA7E7526468F68004B4429 /* BuildAccountFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2108FB1D2642482D008DE1E9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2108FB1E2642482D008DE1E9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2108FB1D2642482D008DE1E9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 217DBDE62626AFF6000218FD /* Project object */;
 }

@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
+import Kingfisher
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        let url = URL(string: "https://cdn2.ettoday.net/images/3268/d3268416.jpg")!
+        return KFImage(url)
+            .resizable()
+            .scaledToFit()
     }
 }
 
