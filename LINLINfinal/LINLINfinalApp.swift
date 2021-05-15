@@ -12,7 +12,7 @@ struct LINLINfinalApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignInView(showSignInView: .constant(true))
         }
     }
 }

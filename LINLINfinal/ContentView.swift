@@ -6,15 +6,32 @@
 //
 
 import SwiftUI
-
-
+import FirebaseAuth
 import Kingfisher
 struct ContentView: View {
+    let url = ""
+    
     var body: some View {
-        let url = URL(string: "https://cdn2.ettoday.net/images/3268/d3268416.jpg")!
-        return KFImage(url)
-            .resizable()
-            .scaledToFit()
+        VStack{
+            
+            List {
+                if let user = Auth.auth().currentUser {
+                Group{
+                
+                    let url = user.photoURL
+                    KFImage(url)
+                        .resizable()
+                        .scaledToFit()
+                
+                }
+                Text("\(user.uid)")
+                    Text("\(user.email!)")
+                    Text("\(user.displayName!)")
+                }
+            }
+            .listStyle(InsetGroupedListStyle())
+            
+        }
     }
 }
 

@@ -6,23 +6,38 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
+import Kingfisher
 struct StartView: View {
+    @Binding var showStartView: Bool
+    let url = ""
+    
     var body: some View {
         VStack{
-        Text("Hello, World!")
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-            Text("登入")
-        })
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Text("")
-            })
+            
+            List {
+                if let user = Auth.auth().currentUser {
+                Group{
+                
+                    let url = user.photoURL
+                    KFImage(url)
+                        .resizable()
+                        .scaledToFit()
+                
+                }
+                Text("\(user.uid)")
+                    Text("\(user.email!)")
+                    Text("\(user.displayName!)")
+                }
+            }
+            .listStyle(InsetGroupedListStyle())
+            
         }
     }
 }
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        StartView()
+        StartView(showStartView: .constant(true))
     }
 }

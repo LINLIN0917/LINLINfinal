@@ -10,4 +10,5 @@ target 'LINLINfinal' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
+pod 'FirebaseStorageSwift', '~> 7.0-beta'
 end

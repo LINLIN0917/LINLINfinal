@@ -11,6 +11,9 @@ struct SignInView: View {
     @State private var account = ""
     @State private var password = ""
     @State private var showSignUpView = false
+    @State private var showStartView = false
+    @Binding var showSignInView: Bool
+    
     //@State private var showSignAlert = false
     var body: some View {
         VStack{
@@ -20,8 +23,12 @@ struct SignInView: View {
                 Button(action: {
                     signInAccount(account: account, password: password)
                     userSignIn()
+                    showStartView = true
                 }, label: {
                     Text("登入")
+                })
+                .fullScreenCover(isPresented: $showStartView, content: {
+                    StartView(showStartView: $showStartView)
                 })
                 Button(action: {showSignUpView = true}, label: {
                     Text("註冊")
@@ -38,7 +45,7 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(showSignInView: .constant(true))
     }
 }
 struct TextView: View {

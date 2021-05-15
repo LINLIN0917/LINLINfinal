@@ -32,13 +32,20 @@ struct SignUpView: View {
                     Text(roles[index])
                 }
             }
+            HStack{
+                Button(action: {
+                    showSignUpView = false
+                }, label: {
+                    Text("返回")
+                })
             Button(action: {
                 creatAccount(account: account, password: password)
                 createInfo(name: name, email: account, password: password, age: Int(age), country: roles[selectedIndex])
-                showSignUpView = false
+                showSetView = true
             }, label: {
-                Text("註冊")
+                Text("下一步")
             })
+            }
             EmptyView()
                 .fullScreenCover(isPresented: $showSetView, content: {
                     SetPhotoView(showSetView: $showSetView)
