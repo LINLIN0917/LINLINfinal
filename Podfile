@@ -6,9 +6,12 @@ target 'LINLINfinal' do
   use_frameworks!
 
   # Pods for LINLINfinal
- pod 'Firebase/Storage'
+pod 'Firebase/Storage'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
 pod 'FirebaseStorageSwift', '~> 7.0-beta'
+pod 'Google-Mobile-Ads-SDK'
+pod ‘FirebaseAnalytics'
+pod 'Firebase/Crashlytics'
 end

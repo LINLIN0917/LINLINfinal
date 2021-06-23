@@ -11,8 +11,11 @@ import SwiftUI
 struct LINLINfinalApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
-        WindowGroup {
-            SignInView(showSignInView: .constant(true))
+        /*WindowGroup {
+            SignInView(backSignInView: .constant(true))
+        }*/
+        WindowGroup{
+            StartView()
         }
     }
 }

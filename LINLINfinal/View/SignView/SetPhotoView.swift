@@ -9,20 +9,21 @@ import SwiftUI
 
 struct SetPhotoView: View {
     @Binding var showSetView: Bool
-    @State private var chooseFace: String = "Awe"
-    @State private var chooseColor: Color = .purple
-    @State private var showSignInView = false
-    @State private var displayName = ""
+   @State private var backSignInView = false
+   
+    @StateObject var setUpViewModel = SetPhotoViewModel()
+    
+    @State private var showAlert = false
     var characterView: some View{
         ZStack{
             Circle()
-                .fill(chooseColor)
-                .frame(width: 100, height: 100)
+                .fill(setUpViewModel.chooseColor)
+                .frame(width: 100, height: 100, alignment: .center)
                 .overlay(
                     Circle()
                         .strokeBorder(Color.black, lineWidth: 4)
                 )
-            Image(chooseFace)
+            Image(setUpViewModel.chooseFace)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100, alignment: .center)
@@ -31,11 +32,10 @@ struct SetPhotoView: View {
     var body: some View {
         VStack{
             characterView
-            Text("臉型")
-            HStack{
-                
+                        HStack{
+                            Text("face:")
                 ForEach(0..<faces.count){ index in
-                    Button(action: {chooseFace = faces[index]}, label: {
+                    Button(action: {setUpViewModel.chooseFace = faces[index]}, label: {
                         Image(faces[index])
                             .resizable()
                             .scaledToFit()
@@ -43,10 +43,11 @@ struct SetPhotoView: View {
                     })
                 }
             }
-            Text("顏色")
+            
             HStack{
+                Text("color:")
                 ForEach(0..<colors.count){index in
-                    Button(action: {chooseColor = colors[index] }, label: {
+                    Button(action: {setUpViewModel.chooseColor = colors[index] }, label: {
                         Circle()
                             .fill(colors[index])
                             .frame(width: 35, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -58,43 +59,68 @@ struct SetPhotoView: View {
             
             Button(action: {let color1 = colors.randomElement()!
                 let face1 = faces.randomElement()!
-                chooseColor = color1
-                chooseFace = face1
+                setUpViewModel.chooseColor = color1
+                setUpViewModel.chooseFace = face1
             }, label: {
-                Text("隨機設定")
+                Text("random setting")
             })
-            TextView(text1: "輸入暱稱", text2: $displayName)
+            TextView(text1: "Name", text2: $setUpViewModel.displayName)
             HStack{
                 Button(action: {showSetView = false}, label: {
-                    Text("返回")
+                    Text("back")
                 })
                 Button(action: {
+                    if setUpViewModel.displayName != ""{
                     let UIimage = characterView.snapshot()
                     UIImageWriteToSavedPhotosAlbum(UIimage, nil, nil, nil)
                     uploadPhoto(image: UIimage) { result in
                         switch result {
                         case .success(let url):
-                            setUserPhoto(url: url, name: displayName)
+                            setUserPhoto(url: url, name: setUpViewModel.displayName)
                         case .failure(let error):
                            print(error)
                         }
                     }
-                showSignInView = true
-                    setUserCharacterPhoto()
+    
+                        setUserCharacterPhoto()
+                    }
+                    else{
+                        showAlert = true
+                    }
                 }, label: {
-                    Text("設定完成")
+                    Text("upload")
+                })
+
+                Button(action: {
+                    
+                    if setUpViewModel.displayName != ""
+                    {
+                    backSignInView = true
+                    
+                    }
+                    else{
+                        showAlert = true
+                    }
+                }, label: {
+                    Text("finish")
                 })
             }
-            .fullScreenCover(isPresented: $showSignInView, content: {
-                SignInView(showSignInView: $showSignInView)
+            .alert(isPresented: $showAlert) { () -> Alert in
+                return Alert(title: Text("Failed"), message: Text("Name is empty."), dismissButton: .cancel())
+             }
+            .fullScreenCover(isPresented: $backSignInView, content: {
+                SignInView(goSignInView: .constant(true))
             })
+
         }
+        
     }
 }
 
 struct SetPhotoView_Previews: PreviewProvider {
     static var previews: some View {
         SetPhotoView(showSetView: .constant(true))
+.previewInterfaceOrientation(.landscapeRight)
     }
 }
 

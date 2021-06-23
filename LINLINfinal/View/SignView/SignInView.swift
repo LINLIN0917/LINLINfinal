@@ -8,32 +8,32 @@
 import SwiftUI
 
 struct SignInView: View {
-    @State private var account = ""
-    @State private var password = ""
+    @StateObject var signInViewModel = SignInViewModel()
+    
     @State private var showSignUpView = false
-    @State private var showStartView = false
-    @Binding var showSignInView: Bool
+    @State private var goAccountView = false
+    
+    @Binding var goSignInView: Bool
     
     //@State private var showSignAlert = false
     var body: some View {
         VStack{
-            TextView(text1: "輸入帳號", text2: $account)
-            TextView(text1: "輸入密碼", text2: $password)
+            TextView(text1: NSLocalizedString("輸入帳號", comment: ""), text2: $signInViewModel.account)
+            TextView(text1: NSLocalizedString("輸入密碼", comment: ""), text2: $signInViewModel.password)
             HStack{
                 Button(action: {
-                    signInAccount(account: account, password: password)
+                    signInAccount(account: signInViewModel.account, password: signInViewModel.password)
                     userSignIn()
-                    showStartView = true
+                    goAccountView = true
                 }, label: {
-                    Text("登入")
+                    Text("sign in")
                 })
-                .fullScreenCover(isPresented: $showStartView, content: {
-                    StartView(showStartView: $showStartView)
+                .fullScreenCover(isPresented: $goAccountView, content: {
+                    AccountView(goAccountView: $goAccountView)
                 })
                 Button(action: {showSignUpView = true}, label: {
-                    Text("註冊")
+                    Text("sign up")
                 })
-                EmptyView()
                 .fullScreenCover(isPresented: $showSignUpView, content: {
                     SignUpView(showSignUpView: $showSignUpView)
                 })
@@ -45,7 +45,8 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView(showSignInView: .constant(true))
+        SignInView(goSignInView: .constant(true))
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
 struct TextView: View {

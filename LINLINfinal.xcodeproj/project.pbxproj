@@ -7,26 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2108FB1F2642482D008DE1E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2108FB1E2642482D008DE1E9 /* Kingfisher */; };
 		210DAF792648174F00631AAF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210DAF782648174F00631AAF /* StartView.swift */; };
+		2124BAF2267F76C700D2AFDF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF1267F76C700D2AFDF /* TextView.swift */; };
+		2124BAF4267F76DD00D2AFDF /* Test2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF3267F76DD00D2AFDF /* Test2View.swift */; };
+		2124BAF7267F906300D2AFDF /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF6267F906300D2AFDF /* Music.swift */; };
+		2124BAF9267F917300D2AFDF /* BGM1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2124BAF8267F917300D2AFDF /* BGM1.mp3 */; };
+		2124BAFB267F91AC00D2AFDF /* BGM2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2124BAFA267F91AC00D2AFDF /* BGM2.mp3 */; };
+		212F87542681CCA200E2D211 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F87532681CCA200E2D211 /* RoomViewModel.swift */; };
+		212F87562682190000E2D211 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8755268218FF00E2D211 /* GameView.swift */; };
+		213452AB26750D49000D7C32 /* SIgnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213452AA26750D49000D7C32 /* SIgnViewModel.swift */; };
+		213C3E3826707FC1003D5186 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 213C3E3726707FC1003D5186 /* Kingfisher */; };
 		217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */; };
-		217DBDF42626AFF6000218FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF32626AFF6000218FD /* ContentView.swift */; };
+		217DBDF42626AFF6000218FD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBDF32626AFF6000218FD /* AccountView.swift */; };
 		217DBDF62626AFF7000218FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF52626AFF7000218FD /* Assets.xcassets */; };
 		217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBDF82626AFF7000218FD /* Preview Assets.xcassets */; };
 		217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217DBE092626B0DD000218FD /* GoogleService-Info.plist */; };
 		217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DBE0C2626B123000218FD /* AppDelegate.swift */; };
 		21AA7E7326468DC9004B4429 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA7E7226468DC9004B4429 /* SignUpView.swift */; };
 		21AA7E7526468F68004B4429 /* BuildAccountFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA7E7426468F68004B4429 /* BuildAccountFile.swift */; };
+		21B11FFE26673A65005E72F5 /* CrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B11FFD26673A65005E72F5 /* CrashView.swift */; };
 		21B503142646D57900CF68BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B503132646D57900CF68BD /* SignInView.swift */; };
 		21B503162646F37200CF68BD /* SetPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B503152646F37200CF68BD /* SetPhotoView.swift */; };
-		61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */; };
+		21C1443A2680F2B0004EC8B7 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C144392680F2B0004EC8B7 /* RoomView.swift */; };
+		21D9E10F2654C1D4005BC924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21D9E10D2654C1D4005BC924 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		210DAF782648174F00631AAF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2124BAF1267F76C700D2AFDF /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		2124BAF3267F76DD00D2AFDF /* Test2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2View.swift; sourceTree = "<group>"; };
+		2124BAF6267F906300D2AFDF /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		2124BAF8267F917300D2AFDF /* BGM1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM1.mp3; sourceTree = "<group>"; };
+		2124BAFA267F91AC00D2AFDF /* BGM2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM2.mp3; sourceTree = "<group>"; };
+		212F87532681CCA200E2D211 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		212F8755268218FF00E2D211 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		213452AA26750D49000D7C32 /* SIgnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnViewModel.swift; sourceTree = "<group>"; };
 		217DBDEE2626AFF6000218FD /* LINLINfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LINLINfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LINLINfinalApp.swift; sourceTree = "<group>"; };
-		217DBDF32626AFF6000218FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		217DBDF32626AFF6000218FD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		217DBDF52626AFF7000218FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		217DBDF82626AFF7000218FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		217DBDFA2626AFF7000218FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,8 +52,12 @@
 		217DBE0C2626B123000218FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21AA7E7226468DC9004B4429 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		21AA7E7426468F68004B4429 /* BuildAccountFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildAccountFile.swift; sourceTree = "<group>"; };
+		21B11FFD26673A65005E72F5 /* CrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashView.swift; sourceTree = "<group>"; };
 		21B503132646D57900CF68BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		21B503152646F37200CF68BD /* SetPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPhotoView.swift; sourceTree = "<group>"; };
+		21C144392680F2B0004EC8B7 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		21D9E10E2654C1D4005BC924 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		21D9E1112654C32B005BC924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LINLINfinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C77D4D3865E3C1C464E07 /* Pods-LINLINfinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.debug.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.debug.xcconfig"; sourceTree = "<group>"; };
 		F75B72BD546FBC7CC49D6774 /* Pods-LINLINfinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LINLINfinal.release.xcconfig"; path = "Target Support Files/Pods-LINLINfinal/Pods-LINLINfinal.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,14 +68,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2108FB1F2642482D008DE1E9 /* Kingfisher in Frameworks */,
-				61EA9AEB3EEF78E4F66AE14F /* Pods_LINLINfinal.framework in Frameworks */,
+				213C3E3826707FC1003D5186 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2124BAF5267F904700D2AFDF /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				2124BAF8267F917300D2AFDF /* BGM1.mp3 */,
+				2124BAFA267F91AC00D2AFDF /* BGM2.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		213452A426750B12000D7C32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				213452A726750C13000D7C32 /* GameView */,
+				213452A626750BF7000D7C32 /* SignView */,
+				213452A526750B7A000D7C32 /* Crash */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		213452A526750B7A000D7C32 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				21B11FFD26673A65005E72F5 /* CrashView.swift */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		213452A626750BF7000D7C32 /* SignView */ = {
+			isa = PBXGroup;
+			children = (
+				21B503152646F37200CF68BD /* SetPhotoView.swift */,
+				21B503132646D57900CF68BD /* SignInView.swift */,
+				21AA7E7226468DC9004B4429 /* SignUpView.swift */,
+			);
+			path = SignView;
+			sourceTree = "<group>";
+		};
+		213452A726750C13000D7C32 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				210DAF782648174F00631AAF /* StartView.swift */,
+				21C144392680F2B0004EC8B7 /* RoomView.swift */,
+				212F8755268218FF00E2D211 /* GameView.swift */,
+				217DBDF32626AFF6000218FD /* AccountView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		213452A826750CBE000D7C32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				213452AA26750D49000D7C32 /* SIgnViewModel.swift */,
+				212F87532681CCA200E2D211 /* RoomViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		213452A926750CF6000D7C32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2124BAF6267F906300D2AFDF /* Music.swift */,
+				21AA7E7426468F68004B4429 /* BuildAccountFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		217DBDE52626AFF6000218FD = {
 			isa = PBXGroup;
 			children = (
@@ -75,17 +162,18 @@
 		217DBDF02626AFF6000218FD /* LINLINfinal */ = {
 			isa = PBXGroup;
 			children = (
+				2124BAF5267F904700D2AFDF /* Music */,
+				2124BAF1267F76C700D2AFDF /* TextView.swift */,
+				2124BAF3267F76DD00D2AFDF /* Test2View.swift */,
 				217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */,
 				217DBE0C2626B123000218FD /* AppDelegate.swift */,
 				217DBE092626B0DD000218FD /* GoogleService-Info.plist */,
-				217DBDF32626AFF6000218FD /* ContentView.swift */,
-				210DAF782648174F00631AAF /* StartView.swift */,
-				21B503132646D57900CF68BD /* SignInView.swift */,
-				21AA7E7226468DC9004B4429 /* SignUpView.swift */,
-				21B503152646F37200CF68BD /* SetPhotoView.swift */,
-				21AA7E7426468F68004B4429 /* BuildAccountFile.swift */,
-				217DBDF52626AFF7000218FD /* Assets.xcassets */,
+				213452A426750B12000D7C32 /* View */,
+				213452A826750CBE000D7C32 /* ViewModels */,
+				213452A926750CF6000D7C32 /* Models */,
 				217DBDFA2626AFF7000218FD /* Info.plist */,
+				217DBDF52626AFF7000218FD /* Assets.xcassets */,
+				21D9E10D2654C1D4005BC924 /* Localizable.strings */,
 				217DBDF72626AFF7000218FD /* Preview Content */,
 			);
 			path = LINLINfinal;
@@ -128,6 +216,7 @@
 				217DBDEB2626AFF6000218FD /* Frameworks */,
 				217DBDEC2626AFF6000218FD /* Resources */,
 				400B52FC001EE3B4B87879C1 /* [CP] Embed Pods Frameworks */,
+				21B11FFF26673B14005E72F5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,7 +224,7 @@
 			);
 			name = LINLINfinal;
 			packageProductDependencies = (
-				2108FB1E2642482D008DE1E9 /* Kingfisher */,
+				213C3E3726707FC1003D5186 /* Kingfisher */,
 			);
 			productName = LINLINfinal;
 			productReference = 217DBDEE2626AFF6000218FD /* LINLINfinal.app */;
@@ -162,6 +251,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 217DBDE52626AFF6000218FD;
 			packageReferences = (
@@ -181,8 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2124BAFB267F91AC00D2AFDF /* BGM2.mp3 in Resources */,
 				217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */,
+				21D9E10F2654C1D4005BC924 /* Localizable.strings in Resources */,
 				217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */,
+				2124BAF9267F917300D2AFDF /* BGM1.mp3 in Resources */,
 				217DBDF62626AFF7000218FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +283,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		21B11FFF26673B14005E72F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		400B52FC001EE3B4B87879C1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,17 +349,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B503142646D57900CF68BD /* SignInView.swift in Sources */,
+				2124BAF7267F906300D2AFDF /* Music.swift in Sources */,
+				2124BAF2267F76C700D2AFDF /* TextView.swift in Sources */,
+				21C1443A2680F2B0004EC8B7 /* RoomView.swift in Sources */,
 				21AA7E7326468DC9004B4429 /* SignUpView.swift in Sources */,
+				2124BAF4267F76DD00D2AFDF /* Test2View.swift in Sources */,
+				21B11FFE26673A65005E72F5 /* CrashView.swift in Sources */,
 				21B503162646F37200CF68BD /* SetPhotoView.swift in Sources */,
 				210DAF792648174F00631AAF /* StartView.swift in Sources */,
 				217DBE0D2626B123000218FD /* AppDelegate.swift in Sources */,
-				217DBDF42626AFF6000218FD /* ContentView.swift in Sources */,
+				212F87542681CCA200E2D211 /* RoomViewModel.swift in Sources */,
+				213452AB26750D49000D7C32 /* SIgnViewModel.swift in Sources */,
+				217DBDF42626AFF6000218FD /* AccountView.swift in Sources */,
 				217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */,
+				212F87562682190000E2D211 /* GameView.swift in Sources */,
 				21AA7E7526468F68004B4429 /* BuildAccountFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21D9E10D2654C1D4005BC924 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D9E10E2654C1D4005BC924 /* zh-Hant */,
+				21D9E1112654C32B005BC924 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		217DBDFB2626AFF7000218FD /* Debug */ = {
@@ -301,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,10 +505,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"LINLINfinal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LINLINfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +531,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LINLINfinal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LINLINfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +578,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2108FB1E2642482D008DE1E9 /* Kingfisher */ = {
+		213C3E3726707FC1003D5186 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2108FB1D2642482D008DE1E9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;

@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 import FirebaseStorage
 import FirebaseStorageSwift
 import SwiftUI
+
 struct ID: Codable, Identifiable { //使用者資料型別
     @DocumentID var id: String?
     let name: String
@@ -20,6 +21,7 @@ struct ID: Codable, Identifiable { //使用者資料型別
     let age: Int
     let country: String
 }
+
 struct Role {
     var face: String
     var color: String
