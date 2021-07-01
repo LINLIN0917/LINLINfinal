@@ -10,12 +10,14 @@ import SwiftUI
 @main
 struct LINLINfinalApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         /*WindowGroup {
             SignInView(backSignInView: .constant(true))
         }*/
+        
         WindowGroup{
             StartView()
-        }
+                        }
     }
 }

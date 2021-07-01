@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		210DAF792648174F00631AAF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210DAF782648174F00631AAF /* StartView.swift */; };
+		2118B390268D885F00F26B40 /* Admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118B38F268D885F00F26B40 /* Admob.swift */; };
+		2118B393268D93C900F26B40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2118B391268D93C900F26B40 /* InfoPlist.strings */; };
 		2124BAF2267F76C700D2AFDF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF1267F76C700D2AFDF /* TextView.swift */; };
 		2124BAF4267F76DD00D2AFDF /* Test2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF3267F76DD00D2AFDF /* Test2View.swift */; };
 		2124BAF7267F906300D2AFDF /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124BAF6267F906300D2AFDF /* Music.swift */; };
@@ -30,10 +32,13 @@
 		21B503162646F37200CF68BD /* SetPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B503152646F37200CF68BD /* SetPhotoView.swift */; };
 		21C1443A2680F2B0004EC8B7 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C144392680F2B0004EC8B7 /* RoomView.swift */; };
 		21D9E10F2654C1D4005BC924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21D9E10D2654C1D4005BC924 /* Localizable.strings */; };
+		F8BE9A85164586E930CDEFC1 /* Pods_LINLINfinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D90D07CC821BB33CD82B5CE /* Pods_LINLINfinal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		210DAF782648174F00631AAF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2118B38F268D885F00F26B40 /* Admob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admob.swift; sourceTree = "<group>"; };
+		2118B392268D93C900F26B40 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2124BAF1267F76C700D2AFDF /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		2124BAF3267F76DD00D2AFDF /* Test2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2View.swift; sourceTree = "<group>"; };
 		2124BAF6267F906300D2AFDF /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				213C3E3826707FC1003D5186 /* Kingfisher in Frameworks */,
+				F8BE9A85164586E930CDEFC1 /* Pods_LINLINfinal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				2124BAF5267F904700D2AFDF /* Music */,
+				2118B38F268D885F00F26B40 /* Admob.swift */,
 				2124BAF1267F76C700D2AFDF /* TextView.swift */,
 				2124BAF3267F76DD00D2AFDF /* Test2View.swift */,
 				217DBDF12626AFF6000218FD /* LINLINfinalApp.swift */,
@@ -172,6 +179,7 @@
 				213452A826750CBE000D7C32 /* ViewModels */,
 				213452A926750CF6000D7C32 /* Models */,
 				217DBDFA2626AFF7000218FD /* Info.plist */,
+				2118B391268D93C900F26B40 /* InfoPlist.strings */,
 				217DBDF52626AFF7000218FD /* Assets.xcassets */,
 				21D9E10D2654C1D4005BC924 /* Localizable.strings */,
 				217DBDF72626AFF7000218FD /* Preview Content */,
@@ -272,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2124BAFB267F91AC00D2AFDF /* BGM2.mp3 in Resources */,
+				2118B393268D93C900F26B40 /* InfoPlist.strings in Resources */,
 				217DBDF92626AFF7000218FD /* Preview Assets.xcassets in Resources */,
 				21D9E10F2654C1D4005BC924 /* Localizable.strings in Resources */,
 				217DBE0A2626B0DD000218FD /* GoogleService-Info.plist in Resources */,
@@ -363,6 +372,7 @@
 				217DBDF42626AFF6000218FD /* AccountView.swift in Sources */,
 				217DBDF22626AFF6000218FD /* LINLINfinalApp.swift in Sources */,
 				212F87562682190000E2D211 /* GameView.swift in Sources */,
+				2118B390268D885F00F26B40 /* Admob.swift in Sources */,
 				21AA7E7526468F68004B4429 /* BuildAccountFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +380,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2118B391268D93C900F26B40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2118B392268D93C900F26B40 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		21D9E10D2654C1D4005BC924 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -509,10 +527,107 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LINLINfinal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LINLINfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseCrashlytics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"FirebaseStorageSwift\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lin.LINLINfinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,10 +646,107 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LINLINfinal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LINLINfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseCrashlytics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"FirebaseStorageSwift\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lin.LINLINfinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";

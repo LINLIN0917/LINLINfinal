@@ -14,30 +14,59 @@ struct SignInView: View {
     @State private var goAccountView = false
     
     @Binding var goSignInView: Bool
-    
+    @State private var showAlert = false
     //@State private var showSignAlert = false
     var body: some View {
-        VStack{
-            TextView(text1: NSLocalizedString("輸入帳號", comment: ""), text2: $signInViewModel.account)
-            TextView(text1: NSLocalizedString("輸入密碼", comment: ""), text2: $signInViewModel.password)
+        ZStack{
+            Image("BackGround")
+                .resizable()
+                .scaledToFill()
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+                .opacity(0.8)
+                       VStack{
+                        Text("SIGN IN")
+                            .bold()
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .background(Color.orange)
+                            .overlay(
+                                Rectangle()
+                                    .stroke(Color.white, lineWidth: 5))
+            TextView(text1: NSLocalizedString("Enter your email", comment: ""), text2: $signInViewModel.account)
+            TextView(text1: NSLocalizedString("Enter your password", comment: ""), text2: $signInViewModel.password)
             HStack{
                 Button(action: {
                     signInAccount(account: signInViewModel.account, password: signInViewModel.password)
-                    userSignIn()
-                    goAccountView = true
+                    let user = userSignIn()
+                    
+                    if user == true {
+                        goAccountView = true
+                    }
+                    else{
+                        showAlert = true
+                    }
                 }, label: {
                     Text("sign in")
                 })
+                .alert(isPresented: $showAlert) { () -> Alert in
+                    return Alert(title: Text("Failed"), message: Text("Cannot Find your account or password, please check your enter."), dismissButton: .cancel())}
+                .buttonStyle(BlueButton())
                 .fullScreenCover(isPresented: $goAccountView, content: {
-                    AccountView(goAccountView: $goAccountView)
+                    AccountView(goAccountView: $goAccountView, roomViewModel: RoomViewModel())
                 })
+                Spacer()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Button(action: {showSignUpView = true}, label: {
                     Text("sign up")
                 })
+                .buttonStyle(BlueButton())
                 .fullScreenCover(isPresented: $showSignUpView, content: {
                     SignUpView(showSignUpView: $showSignUpView)
                 })
                 
+            }
             }
         }
     }
@@ -46,7 +75,7 @@ struct SignInView: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView(goSignInView: .constant(true))
-.previewInterfaceOrientation(.landscapeLeft)
+            .previewLayout(.fixed(width: 812, height: 375))
     }
 }
 struct TextView: View {

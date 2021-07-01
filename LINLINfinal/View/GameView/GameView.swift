@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct GameView: View {
+    @Binding var showGameView: Bool
     var body: some View {
-        Form{
+        
         Image("BackGround")
             .resizable()
             .scaledToFit()
             .frame(width: 250, height: 250)
-        }
+        
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
-.previewInterfaceOrientation(.landscapeLeft)
+        GameView(showGameView: .constant(true))
     }
 }

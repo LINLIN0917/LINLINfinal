@@ -5,6 +5,9 @@
 "back" = "返回";
 
 /* No comment provided by engineer. */
+"Cannot Find your account or password, please check your enter." = "找不到你的帳號或密碼，請檢查你的輸入。";
+
+/* No comment provided by engineer. */
 "choose country" = "選擇國家";
 
 /* No comment provided by engineer. */
@@ -14,20 +17,86 @@
 "country：" = "國家：";
 
 /* No comment provided by engineer. */
-"face:" = "臉型：";
+"Crash" = "";
+
+/* No comment provided by engineer. */
+"Create Room" = "創造房間";
+
+/* No comment provided by engineer. */
+"Enter your email" = "輸入你的email";
+
+/* No comment provided by engineer. */
+"Enter your password" = "輸入你的密碼";
+
+/* No comment provided by engineer. */
+"Failed" = "失敗";
 
 /* No comment provided by engineer. */
 "finish" = "設定完成";
 
 /* No comment provided by engineer. */
+"Finish Upload." = "完成上傳";
+
+/* No comment provided by engineer. */
+"Join Room" = "加入房間";
+
+/* No comment provided by engineer. */
+"Load Ad" = "載入廣告";
+
+/* No comment provided by engineer. */
 "next" = "下一步";
 
 /* No comment provided by engineer. */
-"random set" = "隨機設定";
+"PROFILE" = "個人資料";
+
+/* No comment provided by engineer. */
+"random setting" = "隨機設定";
+
+/* No comment provided by engineer. */
+"Ready" = "準備";
+
+/* No comment provided by engineer. */
+"ROOM:%@" = "房間號碼：%@";
+
+/* No comment provided by engineer. */
+"See infomation" = "查看資訊";
+
+/* No comment provided by engineer. */
+"SET CHARACTER" = "創造角色";
+
+/* No comment provided by engineer. */
+"Show Ad" = "觀看廣告";
 
 /* No comment provided by engineer. */
 "sign in" = "登入";
 
 /* No comment provided by engineer. */
+"SIGN IN" = "登入";
+
+/* No comment provided by engineer. */
 "sign up" = "註冊";
+
+/* No comment provided by engineer. */
+"SIGN UP" = "註冊";
+
+/* No comment provided by engineer. */
+"SignOut" = "登出";
+
+/* No comment provided by engineer. */
+"START" = "開始";
+
+/* No comment provided by engineer. */
+"Start Game" = "開始遊戲";
+
+/* No comment provided by engineer. */
+"Success" = "成功";
+
+/* No comment provided by engineer. */
+"Taiwanese Food Monopoly" = "台灣美食小吃大富翁";
+
+/* No comment provided by engineer. */
+"upload" = "上傳";
+
+/* No comment provided by engineer. */
+"You didn't upload your character." = "還沒上傳的角色喔！";
 

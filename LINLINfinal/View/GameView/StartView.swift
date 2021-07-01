@@ -8,11 +8,13 @@
 import SwiftUI
 import FirebaseAuth
 import Kingfisher
+import GoogleMobileAds
 struct StartView: View {
     
     @State private var goSignInView = false
     //let url = ""
     //@Binding var backSignInView: Bool
+    let rewardedAdController = RewardedAdController()
     var body: some View {
         ZStack{
             Image("BackGround")
@@ -22,33 +24,47 @@ struct StartView: View {
                 .edgesIgnoringSafeArea(.all)
                 .opacity(0.9)
             VStack{
-                HStack{
+                Text("Taiwanese Food Monopoly")
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .background(Color.orange)
+                    .overlay(
+                        Rectangle()
+                            .stroke(Color.white, lineWidth: 5))
+                Spacer()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 80)
+                
                     Button(action: {goSignInView = true}, label: {
-                        Text("Sign In")
-                        
-                            .padding(10.0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10.0)
-                                    .stroke(lineWidth: 2.0)
-                                    .shadow(color: .blue, radius: 10.0))
+                        Text("START")
+                        })
+                    .buttonStyle(BlueButton())
+                Button(action: {rewardedAdController.loadAd()}, label: {
+                    Text("Load Ad")
                     })
+                .buttonStyle(BlueButton())
+                Button(action: {rewardedAdController.showAd()}, label: {
+                    Text("Show Ad")
+                    })
+                .buttonStyle(BlueButton())
+                    
                         .fullScreenCover(isPresented: $goSignInView, content: {
                             SignInView(goSignInView: $goSignInView)
                         })
                         
 
-
+                Spacer()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                     
                     
-                    Button(action: {goSignInView = true}, label: {
-                        Text("See infomation")
-                    })
+            //        Button(action: {goSignInView = true}, label: {
+              //          Text("See infomation")
+              //      })
+                //    .buttonStyle(BlueButton())
                     
-                    Button(action: {goSignInView = true}, label: {
-                        Text("")
-                    })
                     
-                }
+                
             }
             
         }
@@ -61,6 +77,8 @@ struct StartView: View {
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
         StartView()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewLayout(.fixed(width: 812, height: 375))
+            .environmentObject(RoomViewModel())
+
     }
 }

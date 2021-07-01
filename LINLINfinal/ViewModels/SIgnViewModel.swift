@@ -27,6 +27,6 @@ class SignUpViewModel: ObservableObject {
 class SetPhotoViewModel: ObservableObject {
     @Published var chooseFace: String = "Awe"
     @Published var chooseColor: Color = .purple
-    @Published var displayName = ""
+    @Published var displayName: String = ""
 }
 
